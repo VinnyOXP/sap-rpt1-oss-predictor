@@ -83,7 +83,7 @@ with col2:
     if uploaded_file:
         df = pd.read_csv(uploaded_file)
         st.success(f"✅ Loaded {len(df)} rows")
-        st.dataframe(df.head(5), use_container_width=True)
+        st.dataframe(df.head(5), width='stretch')
         data_context = f"\n\nUser's uploaded data preview:\n```\n{df.head(10).to_string()}\n```\nColumns: {list(df.columns)}"
     else:
         data_context = ""
@@ -102,7 +102,7 @@ with col2:
     ]
     
     for prompt in sample_prompts:
-        if st.button(prompt, key=prompt, use_container_width=True):
+        if st.button(prompt, key=prompt, width='stretch'):
             st.session_state.selected_prompt = prompt
 
 with col1:
@@ -192,7 +192,7 @@ When showing code, use the patterns from the skill.
 
 # Clear chat button
 if st.session_state.messages:
-    if st.button("🗑️ Clear Chat", use_container_width=True):
+    if st.button("🗑️ Clear Chat", width='stretch'):
         st.session_state.messages = []
         st.rerun()
 
