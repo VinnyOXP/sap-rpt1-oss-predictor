@@ -1,6 +1,8 @@
 # SAP-RPT-1-OSS Predictor Skill
 
 A Claude skill for using SAP's open source **SAP-RPT-1-OSS** tabular foundation model for predictive analytics on SAP business data.
+<img width="1280" height="640" alt="image" src="https://github.com/user-attachments/assets/c27da3c9-eeeb-44f3-b295-744b9e9ca9a5" />
+
 
 ## Overview
 
