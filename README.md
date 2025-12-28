@@ -134,6 +134,12 @@ Run batch predictions on 50,000 SAP records using RPT-1
 - [Model on Hugging Face](https://huggingface.co/SAP/sap-rpt-1-oss)
 - [ConTextTab Research Paper](https://arxiv.org/abs/2506.10707)
 
+## Contributors
+
+- [@amitlals](https://github.com/amitlals) - Creator & Maintainer
+- [Claude](https://claude.ai) by Anthropic - AI Pair Programmer (code generation, documentation, skill architecture)
+- [GitHub Copilot](https://github.com/features/copilot) - AI Code Assistant (code suggestions, completions)
+
 ## License
 
 Apache 2.0
