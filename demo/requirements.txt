@@ -2,6 +2,7 @@
 streamlit>=1.28.0
 pandas>=2.0.0
 numpy>=1.24.0
+anthropic>=0.18.0  # Claude API SDK
 
 # Optional: For real model predictions (requires GPU)
 # pip install git+https://github.com/SAP-samples/sap-rpt-1-oss
