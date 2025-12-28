@@ -73,20 +73,25 @@ predictions = clf.predict(X_test)
 
 ### Installation Options
 
-**Claude Code:**
+**Option 1 — Claude Code (CLI):**
 ```bash
 git clone https://github.com/amitlals/sap-rpt1-oss-predictor
 cd sap-rpt1-oss-predictor
-# Skill auto-detected via .claude-plugin/marketplace.json
+claude  # Skill auto-detected via .claude-plugin/marketplace.json
 ```
 
-**Claude.ai Projects:**
-1. Go to Claude.ai → Create Project
-2. Upload `SKILL.md` to Project knowledge
-3. Start prompting
+**Option 2 — Claude.ai (Pro/Team only):**
+1. Go to [claude.ai](https://claude.ai) → Projects (left sidebar)
+2. Create new project → Add to Project Knowledge → Upload `SKILL.md`
+3. Start chatting in that project
 
-**GitHub Copilot:**
-- Skill available in `.github/skills/` directory
+**Option 3 — Claude.ai (Free tier):**
+1. Copy contents of `SKILL.md` 
+2. Paste at the start of your conversation as context
+3. Then ask your prediction questions
+
+**Option 4 — GitHub Copilot:**
+- Clone repo, skill available in `.github/skills/` directory
 
 ### Example Prompts
 
